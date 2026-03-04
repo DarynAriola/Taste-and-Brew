@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste & Brew Cafe</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Georgia, serif;
+    }
+
+    header {
+        background-image: src ("Background.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 90px 20px;
+        position: relative;
+    }
+
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1,
+    header p {
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 44px;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 24px;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    nav {
+        background-color: #4b2e2e;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 25px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    #about { background-color: #fdf6ec; }
+    #products { background-color: #fff8f0; }
+    #prices { background-color: #fdf6ec; }
+    #promo { background-color: #fff8f0; }
+    #order { background-color: #fdf6ec; }
+    #info { background-color: #fff8f0; }
+
+    h2 {
+        color: #4b2e2e;
+        font-size: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    .content-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .content-row img {
+        width: 280px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .text-content {
+        max-width: 500px;
+    }
+
+   
+    form {
+        max-width: 500px;
+        margin: 30px auto 0;
+        text-align: left;
+    }
+
+    form label {
+        font-weight: bold;
+        color: #4b2e2e;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-family: Georgia, serif;
+    }
+
+    form button {
+        background-color: #4b2e2e;
+        color: white;
+        padding: 12px;
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    form button:hover {
+        background-color: #6b3f3f;
+    }
+
+    footer {
+        background-color: #4b2e2e;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Taste & Brew Cafe</h1>
+    <p>A cozy space where comfort meets flavor.</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Menu</a>
+    <a href="#prices">Prices</a>
+    <a href="#promo">Valentine Promo</a>
+    <a href="#order">Order</a>
+    <a href="#info">Visit Us</a>
+</nav>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+At Taste & Brew Cafe, we believe that great coffee and good food bring people closer. Located in Gapan City, our café offers a warm, relaxing atmosphere where students can study, friends can bond, and couples can create sweet memories.
+</p>
+<p>
+Every cup is carefully brewed, and every meal is prepared with passion. Whether you're craving a rich espresso, creamy milk tea, or a satisfying steak, Taste & Brew Cafe is your perfect comfort stop.
+</p>
+</section>
+
+<section id="products">
+<h2>Our Best Sellers</h2>
+<div class="content-row">
+<img src="Photos/Products.webp">
+<div class="text-content">
+<ul>
+<li>☕ Caramel Macchiato</li>
+<li>☕ Cappuccino</li>
+<li>🍵 Matcha Latte</li>
+<li>🧋 Hokkaido Milk Tea</li>
+<li>🥩 Rib-Eye Steak</li>
+<li>🍗 T & B Crispy Fried Chicken</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="prices">
+<h2>Popular Prices</h2>
+<div class="content-row">
+<img src="Photos/Drinks.jpg">
+<div class="text-content">
+<ul>
+<li>Hot Coffee (16oz) — ₱109</li>
+<li>Iced Coffee (16oz) — ₱129</li>
+<li>Milk Tea (16oz) — ₱89</li>
+<li>Biscoff Latte (22oz) — ₱199</li>
+<li>Ube Latte (22oz) — ₱189</li>
+<li>Rib-Eye Steak — ₱436</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="promo">
+<h2>❤️ Valentine’s Promo</h2>
+<div class="content-row">
+<img src="Photos/Promo.jpg">
+<div class="text-content">
+<p>
+Celebrate love with our special Valentine’s Couple Promo for only ₱1,500. Enjoy two steaks of your choice, drinks, salad, and a slice of cheesecake.
+</p>
+<p>
+Post a photo with your partner, tag Taste & Brew Cafe, and get a chance to win exciting gift certificates.
+</p>
+</div>
+</div>
+</section>
+
+
+<section id="order">
+<h2>Place Your Order</h2>
+
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+
+<label>Contact Number</label>
+<input type="tel" placeholder="09XXXXXXXXX" required>
+
+<label>Select Item</label>
+<select required>
+<option value="">Choose your order</option>
+<option>Caramel Macchiato</option>
+<option>Cappuccino</option>
+<option>Matcha Latte</option>
+<option>Hokkaido Milk Tea</option>
+<option>Rib-Eye Steak</option>
+<option>T & B Crispy Fried Chicken</option>
+<option>Others</option>
+</select>
+
+<label>Quantity</label>
+<input type="number" min="1" placeholder="Enter quantity" required>
+
+<label>Special Instructions</label>
+<textarea rows="4" placeholder="Add notes (optional)"></textarea>
+
+<button type="submit">Submit Order</button>
+</form>
+</section>
+
+<section id="info">
+<h2>Visit Us</h2>
+<p>
+📍 271 Tinio Street, Gapan, Philippines, 3105 <br><br>
+📞 0977-861-2017 <br>
+📧 tasteandbrew@gmail.com <br><br>
+🕒 Open Daily: 10:00 AM – 9:00 PM
+</p>
+</section>
+
+<footer>
+Taste & Brew Cafe | Brewed with love
+</footer>
+
+</body>
+</html>
